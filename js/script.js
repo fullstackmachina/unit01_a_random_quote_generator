@@ -25,6 +25,7 @@ let quotes = [
     quote:
       "If you don’t give up, you still have a chance. Giving up is the greatest failure.",
     source: "Ada Lovelace",
+    tag: "pioneer",
   },
   {
     quote:
@@ -37,20 +38,23 @@ let quotes = [
     source: "Maya Angelou",
     citation: "From the book - Wouldn't Take Nothing for My Journey Now",
     year: 1993,
+    tag: "mindset",
   },
   {
     quote:
       "The most disastrous thing you can do is to think that you know everything.",
-    source: "Mattias Petter Johansson (MPJ)",
+    source: "Mattias Petter Johansson",
   },
   {
     quote:
       "The most important thing is to keep going. No matter how slow, you’re still lapping everyone who isn’t trying.",
     source: "Esther Dyson",
+    tag: "motivation, focus",
   },
   {
     quote: "Talk is cheap. Show me the code.",
     source: "Linus Torvalds",
+    tag: "programming, dev jokes",
   },
 ];
 
@@ -58,26 +62,47 @@ let quotes = [
  * getRandomQuote function: This function generates a random number
  * that will be used as an index for the quotes array.
  */
+let lastIndex = null;
 
 function getRandomQuote() {
-  let randomNumber = Math.floor(Math.random() * 8);
-  console.log(randomNumber);
+  let randomNumber = Math.floor(Math.random() * quotes.length);
 
-  let quoteIndex = quotes[randomNumber];
-  console.log(quoteIndex);
+  while (randomNumber === lastIndex) {
+    randomNumber = Math.floor(Math.random() * quotes.length);
+  }
 
-  return quoteIndex;
+  lastIndex = randomNumber;
+
+  return quotes[randomNumber];
 }
 
-/***
- * `printQuote` function
- ***/
+/* `changeBackgroundColor`:
+   This function generates random numbers to create an RGB value,
+   allowing a new background color each time a quote is printed.
+*/
+const createRandomNumber = () => Math.floor(Math.random() * 256);
+
+function changeBackgroundColor() {
+  const colorNumber = [
+    createRandomNumber(),
+    createRandomNumber(),
+    createRandomNumber(),
+  ];
+  const colorCode = `rgb(${colorNumber[0]}, ${colorNumber[1]}, ${colorNumber[2]})`;
+  document.body.style.backgroundColor = colorCode;
+}
+
+/**
+ * `printQuote` function: This function updates the UI to display the quote,
+ * its source, and the citation and year if they exist.
+ */
 
 function printQuote() {
   let quoteToShow = getRandomQuote();
   let html = `
     <p class="quote">${quoteToShow.quote}</p>
     <p class="source">${quoteToShow.source}
+
   
   `;
 
@@ -88,12 +113,19 @@ function printQuote() {
     html += `<span class="year">${quoteToShow.year}</span>`;
   }
 
+  if (quoteToShow.tag) {
+    html += `<span class="tag"> #${quoteToShow.tag} </span>`;
+  }
+
   html += `</p>`;
 
   document.getElementById("quote-box").innerHTML = html;
+  changeBackgroundColor();
 }
 
 printQuote();
+
+setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
