@@ -60,7 +60,8 @@ let quotes = [
 
 /**
  * getRandomQuote function: This function generates a random number
- * that will be used as an index for the quotes array.
+ * to select a quote from the quotes array. A lastIndex variable is used
+ * to ensure the same quote isn't generated twice in a row, preventing confusion.
  */
 let lastIndex = null;
 
