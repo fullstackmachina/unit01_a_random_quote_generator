@@ -4,7 +4,7 @@ Unit 01 Project
 This is my first project for the Full Stack JavaScript Techdegree.
 The goal was to create a random quote generator using JavaScript, objects, DOM manipulation, and conditional logic.
 
-📦 Project Requirements (Summary)
+📦 Project Requirements (Summary)<br>
 ✔️ Create an array of quote objects
 An array of objects storing the quote, the source, and optional properties such as citation and year.
 
@@ -12,13 +12,13 @@ An array of objects storing the quote, the source, and optional properties such 
 Generates a random number to select a quote from the quotes array.
 
 ✔️ Create the printQuote() function
-Updates the UI by displaying the quote, its source, and the citation and year if they exist.
+Updates the UI by displaying the quote, its source, and the citation and year if they exist.<br>
 
 
-⭐ Extra Credit Features I Completed
-🔹 1. Displayed as an extra <span> for the tag property .
-🔹 2. Function changeBackgroundColor() to generate color and update the page background on each quote refresh 🎨
-🔹 3. Quotes automatically update every 10 seconds using setInterval() ⏱️
+⭐ Extra Credit Features I Completed <br>
+🔹 1. Displayed as an extra <span> for the tag property.  <br>
+🔹 2. Function changeBackgroundColor() to generate color and update the page background on each quote refresh 🎨 <br>
+🔹 3. Quotes automatically update every 10 seconds using setInterval() ⏱️ <br>
 
 
 ✨ My Personal Touch
