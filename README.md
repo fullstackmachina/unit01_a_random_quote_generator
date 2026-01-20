@@ -1,39 +1,66 @@
-🌐 Random Quote Generator — Treehouse FSJS Techdegree
-Unit 01 Project 
+🌐 Random Quote Generator
 
-This is my first project for the Full Stack JavaScript Techdegree.
-The goal was to create a random quote generator using JavaScript, objects, DOM manipulation, and conditional logic.
+Treehouse Full Stack JavaScript Techdegree – Unit 01
 
-📦 Project Requirements (Summary)<br>
-✔️ Create an array of quote objects
-An array of objects storing the quote, the source, and optional properties such as citation and year.
-
-✔️ Create the getRandomQuote() function
-Generates a random number to select a quote from the quotes array.
-
-✔️ Create the printQuote() function
-Updates the UI by displaying the quote, its source, and the citation and year if they exist.<br>
+A dynamic random quote generator built with vanilla JavaScript.
+This project focuses on core JavaScript concepts such as objects, arrays, DOM manipulation, and conditional logic.
 
 
-⭐ Extra Credit Features I Completed <br>
-🔹 1. Displayed as an extra <span> for the tag property.  <br>
-🔹 2. Function changeBackgroundColor() to generate color and update the page background on each quote refresh 🎨 <br>
-🔹 3. Quotes automatically update every 10 seconds using setInterval() ⏱️ <br>
+
+🔗 Live Preview: https://fullstackmachina.github.io/unit01_a_random_quote_generator/
 
 
-✨ My Personal Touch
-My personal addition was implementing logic to make sure the same quote never appears twice in a row 🔁✨.
-This improves the user experience and removes visual confusion.
+📸 Preview
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/0932006e-86f2-4d98-9e67-fc41b73880ab" />
+
+🎯 Project Objectives
+
+- Practice JavaScript fundamentals
+- Manipulate the DOM dynamically
+- Implement conditional rendering
+- Improve user experience with interactivity
+
+📦 Project Requirements
+
+- Create an array of quote objects (quote, source, optional citation & year)
+- bGenerate a random quote using JavaScript
+- Display quotes dynamically in the DOM
+- Conditionally render optional properties
+
+⭐ Extra Credit Features
+
+- Display quote tags when available
+- Dynamic background color change on each quote refresh 🎨
+- Automatic quote refresh every 10 seconds using setInterval() ⏱️
+
+✨ Personal Enhancements
+
+To improve the user experience, I implemented logic to prevent the same quote from appearing twice in a row.
+This avoids repetition and creates a smoother interaction for the user.
+
+🧪 Testing & Code Quality
+
+- Tested all possible UI states
+- Monitored console for errors using Chrome DevTools
+- Clean, readable, and well-indented code
+- Meaningful comments for maintainability
+
+🧠 What I Learned
+
+- How to structure JavaScript objects efficiently
+- DOM selection and dynamic content injection
+- Conditional rendering based on object properties
+- Improving UX through simple logic enhancements
 
 
-🧪 Quality Assurance Testing
-- Tested all possible states of the app
-- Monitored the Chrome DevTools console
-- Ensured clean, readable, well-indented code
-- Added meaningful comments for clarity
+🛠️ Tech Stack
 
+- JavaScript (ES6)
+- HTML5
+- CSS3
 
-🏷️ Tech Used
-- JavaScript
-- HTML
-- CSS
+🔮 Possible Improvements
+
+- Add animations or transitions
+- Allow users to filter quotes by tag
+- Save last displayed quote using localStorage
