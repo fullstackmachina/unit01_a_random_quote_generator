@@ -7,7 +7,7 @@ This project focuses on core JavaScript concepts such as objects, arrays, DOM ma
 
 
 
-🔗 Live Preview: https://fullstackmachina.github.io/unit01_a_random_quote_generator/
+🔗 Live : https://fullstackmachina.github.io/unit01_a_random_quote_generator/
 
 
 📸 Preview
