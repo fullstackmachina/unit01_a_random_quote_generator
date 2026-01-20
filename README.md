@@ -23,7 +23,7 @@ This project focuses on core JavaScript concepts such as objects, arrays, DOM ma
 📦 Project Requirements
 
 - Create an array of quote objects (quote, source, optional citation & year)
-- bGenerate a random quote using JavaScript
+- Generate a random quote using JavaScript
 - Display quotes dynamically in the DOM
 - Conditionally render optional properties
 
