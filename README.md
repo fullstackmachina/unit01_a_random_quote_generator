@@ -7,6 +7,8 @@ A dynamic random quote generator built with vanilla JavaScript. This project foc
 🔗 Live : https://fullstackmachina.github.io/unit01_a_random_quote_generator/
 
 📸 Preview image
+<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/f328b30c-4fa7-4c97-8fc5-78ae196b3cf1" />
+
 
 🎯 Project Requirements
 
