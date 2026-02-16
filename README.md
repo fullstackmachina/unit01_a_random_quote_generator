@@ -11,7 +11,7 @@ This project focuses on core JavaScript concepts such as objects, arrays, DOM ma
 
 
 📸 Preview
-<img width="1920" height="911" alt="image" src="https://github.com/user-attachments/assets/0932006e-86f2-4d98-9e67-fc41b73880ab" />
+<img width="1920" height="911" alt="image" src="![alt text](preview.png) />
 
 🎯 Project Requirements
 
