@@ -11,7 +11,7 @@ This project focuses on core JavaScript concepts such as objects, arrays, DOM ma
 
 
 📸 Preview
-<img src="images/preview.png" alt="Preview" width="800" />
+<img src="preview.png" alt="Preview" width="800" />
 
 🎯 Project Requirements
 
